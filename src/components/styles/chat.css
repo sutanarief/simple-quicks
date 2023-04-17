@@ -1,0 +1,117 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.chat {
+  margin: 0 32px;
+  padding: 22px 0;
+  display: flex;
+  cursor: pointer;
+}
+
+.chat:hover {
+  transform: scale(1.01);
+}
+
+.icon {
+  display: grid;
+  margin-right: 22px;
+}
+
+.chat-icon {
+  width: 34px;
+  height: 34px;
+  background: #2F80ED url('../../assets/person.svg') no-repeat center;
+  background-size: 18px;
+  border-radius: 50%;
+}
+
+.chat-icon-dark {
+  width: 34px;
+  height: 34px;
+  background: #E0E0E0 url('../../assets/person-dark.svg') no-repeat center;
+  margin-right: -16px;
+  background-size: 18px;
+  border-radius: 50%;
+}
+
+.icon-wrapper {
+  display: flex;
+}
+
+.initial-icon {
+  width: 34px;
+  height: 34px;
+  font-size: 12px;
+  /* background: #2F80ED url('../../assets/person.svg') no-repeat center;
+  background-size: 12px; */
+  justify-self: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  background-color: #2F80ED;
+  border-radius: 50%;
+  margin-bottom: 22px;
+  margin-left: 16px;
+}
+
+.initial {
+  color: #FFFFFF;
+}
+
+.chat-title {
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 450px;
+  color: #2F80ED;
+  margin-right: 22px;
+}
+
+.last-person {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.last-chat {
+  max-width: 450px;
+  font-weight: lighter;
+  text-overflow: ellipsis;
+  max-height: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.last-chat-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.read-sign {
+  width: 10px;
+  height: 10px;
+  background-color: #EB5757;
+  border-radius: 50%;
+}
+
+
+
+.search-inbox {
+  /* height: 32px; */
+  background: #FFFFFF url('../../assets/search-dark.svg') no-repeat right 5% center;
+  background-size: 16px;
+  border: solid 1px #828282;
+  padding: 7px 3%;
+  margin: 24px 32px 0 32px;
+  border-radius: 5px;
+}
+
+.search-inbox::placeholder {
+  color: #333333;
+  align-self: center;
+}

@@ -1,0 +1,66 @@
+.inbox {
+  background-color: #333;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+  width: 20%;
+  height: 100vh;
+}
+
+.right-content {
+  border-left: solid 1px #F2F2F2;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+}
+
+.search-input {
+  width: 100%;
+  height: 40px;
+  background: #4F4F4F url('../../assets/search.svg') no-repeat 2%;
+  background-size: 16px;
+  padding-left: 5%;
+  color: #F2F2F2;
+}
+
+.inbox-container {
+  display: flex;
+  justify-self: end;
+  width: 734px;
+  height: 737px;
+  background-color: #FFFFFF;
+  flex-direction: column;
+  margin-right: 34px;
+  margin-bottom: 110px;
+  border-radius: 5px;
+}
+
+input {
+  all: unset;
+}
+
+@media (max-width: 1366px) {
+  .inbox-container {
+    height: 450px;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .right-content {
+    display: block;
+  }
+}
